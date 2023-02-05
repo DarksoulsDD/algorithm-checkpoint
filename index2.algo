@@ -1,0 +1,24 @@
+Algorithme Task_2:
+
+Var i,j:Integer;
+    sum:Integer;
+    arr1,arr2:ARRAY_OF Integer[30];
+Begin
+  sum:=0;
+  i:=0;
+  for(i:=0;i<length(arr1);i++) Do
+   For(j:=0;j<length(arr2);j++) Do
+
+    If (arr1[i]<>arr2[j]) Then
+     sum:=sum+arr1[i];
+    End If
+
+   End For;
+
+   i:=i+1;
+
+  end_for
+  return sum;
+End.
+ 
+ 

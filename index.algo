@@ -1,0 +1,30 @@
+ALGORITHM task_1
+VAR
+    i : INTEGER;
+    num1, num2 : INTEGER;
+    text : "string";
+
+
+BEGIN
+    
+    REPEAT
+        write("donate a sentence which ends with a point");
+        read(text);
+    UNTIL (text[length(text)]=".") and (pos("  ",text)=0);
+    FOR i FROM 1 TO length(text) STEP 1  DO
+        If(text[i]=" ") Then
+    num1:=num1+1;
+    End IF;
+
+    If(text[i]="a")Or(text[i]="e")Or(text[i]="i")Or(text[i]="o")Or(text[i]="u")Or(text[i]="y") Then
+    num2:=num2+1;
+    End IF;
+
+    i:=i+1;
+            
+        END_IF
+
+    END_FOR
+    write("words numbers=",num1);
+ write("vowels numbers=",num2);
+END
